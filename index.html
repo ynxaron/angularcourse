@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Hello There</title>
-    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <body>
-        <p>This is a Paragraph, and I am thrilled</p>
+        <div ng-app="">
+            <p>Name: <input type="text" ng-model="name" /></p>
+            <p ng-bind="name"></p>
+        </div>
     </body>
 </html>
